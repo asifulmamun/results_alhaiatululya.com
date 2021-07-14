@@ -1,9 +1,23 @@
+// Notice
+.notice{
+
+	h1{
+		color: red;
+	}
+
+    button#download{
+        @extend %button_simple;
+        cursor: pointer;
+    }
+}
+
+
 /* Main A4 Size */
 #root{
 	width: 792px;
 	// height: 1120px;
 	font-size: 16px;
-	border: 1px solid #444;
+	// border: 1px solid #444;
 	overflow: hidden;
 	margin: 0 auto;
 	position: relative;
