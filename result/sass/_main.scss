@@ -1,0 +1,119 @@
+/* Main A4 Size */
+#root{
+	width: 792px;
+	// height: 1120px;
+	font-size: 16px;
+	border: 1px solid #444;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+
+	// Header
+	header{
+		text-align: center;
+		padding-top: 1.5rem;
+
+		h1{
+			padding-top: .5rem;
+			font-size: 1.5rem;
+		}
+
+		h3{
+			padding-top: .5rem;
+			font-weight: normal;
+		}
+	}
+
+	// Information
+	.info{
+		padding: 1rem 2rem;
+
+		p.student_info{
+			span:nth-child(2){
+				margin-right: 5rem;
+			}
+		}
+
+		p.result_info{
+			padding-top: .625rem;
+
+			span:nth-child(2),span:nth-child(4),span:nth-child(6){
+				margin-right: 2.5rem;
+			}
+		}
+	}
+
+	// result
+	.results{
+		table.result_table{
+			width: 80%;
+    		margin: 1rem auto;
+			border-collapse: collapse;
+
+			
+			// head
+			thead{
+				background-color: $heading_bg;
+				
+				tr{
+					th{
+						text-align: center;
+						font-weight: bold;
+					}
+				}
+			}
+
+			// body
+			tbody{
+				tr{
+					td{
+						padding: .313rem .625rem;
+					}
+				}
+			}
+
+			// foot
+			tfoot{
+				background-color: $heading_bg;
+				
+				tr{
+					td{
+						font-weight: bold;
+						padding: .313rem .625rem;
+					}
+				}
+			}
+
+			// all
+			thead,tbody,tfoot{
+				tr{
+					th,td{
+						border: .063rem solid $border_color;
+					}
+	
+					td:last-child{
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+// Print css
+@media print {
+	body * {
+	  visibility: hidden;
+	}
+	#root, #root * {
+	  visibility: visible;
+	}/*hide all element from print*/
+	#root {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  border: none;
+	} /*show only printable id for fint*/
+  }
