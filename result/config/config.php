@@ -4,7 +4,7 @@
 function result_data($col_name){
     global $conn, $roll;
   
-    $sql = "SELECT * FROM takmil WHERE `roll` = $roll";
+    $sql = "SELECT * FROM takmil_1442 WHERE `roll` = $roll";
     $result = $conn->query($sql);
   
     if ($result->num_rows > 0) {
