@@ -1,5 +1,5 @@
 -- Create Table
-CREATE TABLE IF NOT EXISTS `takmil1442`.`takmil` (
+CREATE TABLE IF NOT EXISTS `alhasmtq_results1442`.`takmil_1442` (
     `madrasah_code` varchar(50),
     `roll` varchar(50),
     `bukhari_101` varchar(250),
