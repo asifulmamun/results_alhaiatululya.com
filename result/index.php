@@ -46,9 +46,16 @@ $roll = $_GET['roll'];
         </header>
 
         <div class="info">
-            <p class="student_info"><span class="SutonnyMJ">†ivj bs:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('roll'); ?></span><span class="SutonnyMJ">cixÿv_©xi bvg:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('name'); ?></span></p>
+            <p class="student_info">
+                <span>রোলঃ</span><span class="ansi_font">&nbsp;<?php echo result_data('roll'); ?></span>
+                <span>নামঃ</span><span class="ansi_font">&nbsp;<?php echo result_data('name'); ?></span>
+            </p>
 
-            <p class="result_info"><span class="SutonnyMJ">†gvU:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('total'); ?></span><span class="SutonnyMJ">wefvM:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('result'); ?></span><span class="SutonnyMJ">¯’vb:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('merit_list'); ?></span><span class="SutonnyMJ">wKivAvZ:</span><span class="SutonnyMJ">&nbsp;<?php echo result_data('kirayat'); ?></span></p>
+            <p class="result_info">
+                <span>বিভাগঃ</span><span>&nbsp;<?php echo division(result_data('division')); ?></span>
+                <span>কিরাআতঃ</span><span class="ansi_font">&nbsp;<?php echo result_data('kiriyat_111'); ?></span>
+                <span>সর্বমোটঃ</span><span class="ansi_font">&nbsp;<?php echo result_data('total'); ?></span>
+            </p>
         </div>
 
         <div class="results">
@@ -62,51 +69,51 @@ $roll = $_GET['roll'];
 
                 <tbody>
                     <tr>
-                        <td><span class="SutonnyMJ">eyLvix 1g</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('bukhari_1'); ?></span></td>
+                        <td><span>বুখারী ১ম</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('bukhari_101'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">eyLvix 2q</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('bukhari_2'); ?></span></td>
+                        <td><span>বুখারী ২য়</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('bukhari_102'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">gymwjg 1g</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('muslim_1'); ?></span></td>
+                        <td><span>মুসলিম ১ম</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('muslim_103'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">gymwjg 2q</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('muslim_2'); ?></span></td>
+                        <td><span>মুসলিম ২য়</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('muslim_104'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">wZiwghx 1g</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('tirmizi_1'); ?></span></td>
+                        <td><span>তিরমিযী ১ম</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('tirmizi_105'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">wZiwghx 2q</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('tirmizi_2'); ?></span></td>
+                        <td><span>তিরমিযী ২য়</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('tirmizi_106'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">Avey `vD`</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('abu_daud'); ?></span></td>
+                        <td><span>আবু দাউদ</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('abu_daud_107'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">bvmvC I Beby gvRvn</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('nasaie_ebn_maza'); ?></span></td>
+                        <td><span>নাসাঈ ও ইবনু মাজাহ</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('nasai_108'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">kiû gvÔAvwbj Avmvi</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('shorhu_manzil_asar'); ?></span></td>
+                        <td><span>শরহু মা'আনিল আসার</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('tohavi_109'); ?></span></td>
                     </tr>
                     <tr>
-                        <td><span class="SutonnyMJ">gyIqvËv Avb</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('mutta_an'); ?></span></td>
+                        <td><span>মুওয়াত্তাআন</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('muatta_110'); ?></span></td>
                     </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
-                        <td><span class="SutonnyMJ">†gvU</span></td>
-                        <td><span class="SutonnyMJ"><?php echo result_data('total'); ?></span></td>
+                        <td><span>সর্বমোট</span></td>
+                        <td><span class="ansi_font"><?php echo result_data('total'); ?></span></td>
                     </tr>
                 </tfoot>
             </table>

@@ -1,25 +1,24 @@
 -- Create Table
-CREATE TABLE IF NOT EXISTS `takmil2021`.`takmil` (
-    `sl` varchar(50),
+CREATE TABLE IF NOT EXISTS `takmil1442`.`takmil` (
+    `madrasah_code` varchar(50),
     `roll` varchar(50),
-    `name` longtext,
-    `bukhari_1` varchar(250),
-    `bukhari_2` varchar(250),
-    `muslim_1` varchar(250),
-    `muslim_2` varchar(250),
-    `tirmizi_1` varchar(250),
-    `tirmizi_2` varchar(250),
-    `abu_daud` varchar(250),
-    `nasaie_ebn_maza` varchar(250),
-    `shorhu_manzil_asar` varchar(250),
-    `mutta_an` varchar(250),
+    `bukhari_101` varchar(250),
+    `bukhari_102` varchar(250),
+    `muslim_103` varchar(250),
+    `muslim_104` varchar(250),
+    `tirmizi_105` varchar(250),
+    `tirmizi_106` varchar(250),
+    `abu_daud_107` varchar(250),
+    `nasai_108` varchar(250),
+    `tohavi_109` varchar(250),
+    `muatta_110` varchar(250),
+    `kiriyat_111` varchar(250),
     `total` varchar(250),
-    `result` longtext,
-    `merit_list` longtext,
-    `kirayat` varchar(250),
-    `remarks` longtext
-    ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    `division` varchar(250),
+    `name` longtext
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+,,,,,,,,,,,,,,,
 
 -- check duplicate
 /* SELECT
