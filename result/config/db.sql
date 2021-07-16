@@ -18,8 +18,6 @@ CREATE TABLE IF NOT EXISTS `alhasmtq_results1442`.`takmil_1442` (
     `name` longtext
 ) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-,,,,,,,,,,,,,,,
-
 -- check duplicate
 /* SELECT
     roll, COUNT(roll)
