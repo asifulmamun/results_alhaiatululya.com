@@ -12,7 +12,7 @@
 	<!-- form content -->
 	<div class="myform_ncb">
 		<form  action="result" method="GET">
-			<input type="text" name="roll" placeholder="Roll .."><br>
+			<input type="text" name="roll" placeholder="Enter Roll .."><br>
 			<input type="submit" name="submit" value="Submit">
 		</form>
 	</div>
