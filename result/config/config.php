@@ -13,15 +13,15 @@ function result_data($col_name){
     }
   } else {
 
-    return '0';
+    return 'N/A';
   }
 }
 
-// Get Result Madrasha
+// Get Result By Madrasha
 function result_madrasha($col_name){
-  global $conn, $roll;
+  global $conn, $madrasah_code;
 
-  $sql = "SELECT * FROM takmil_1442 WHERE `madrash_id` = $roll";
+  $sql = "SELECT * FROM takmil_1442 WHERE `madrasah_code` = $madrasah_code";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
@@ -30,20 +30,9 @@ function result_madrasha($col_name){
     }
   } else {
 
-    return '0';
+    return 'N/A';
   }
 }
-
-
-// // route
-// function route($route){
-//   $route_headers = @get_headers($route);
-//   if (!$route_headers || $route_headers[0] == 'HTTP/1.1 404 Not Found') {
-//     return './js/route.js';
-//   } else {
-//     return $route;
-//   }
-// }
 
 // Divison
 function division($division){
@@ -61,7 +50,7 @@ function division($division){
 }
 
 // variable
-$template_titile = 'Takmil Result - 1442 Hijri';
 $site_title = 'আল-হাইআতুল উলয়া লিল-জামি‘আতিল কওমিয়া বাংলাদেশ';
 $result_titile = 'দাওরায়ে হাদীস (তাকমীল) পরীক্ষার ফলাফল';
 $result_year = '১৪৪২ হিজরী/১৪২৭ বঙ্গাব্দ/২০২১ ঈসাব্দ';
+$template_titile = $result_titile.$result_year;
