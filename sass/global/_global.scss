@@ -1,0 +1,4 @@
+// Button
+button,input[type=submit]{
+    @extend %button_simple;
+}
