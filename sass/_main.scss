@@ -1,0 +1,94 @@
+// Like as Bootstrap
+.content_wrap{
+    .sidebar_left{
+        min-height: 100vh;
+        border-right: .0625rem solid $colro_border;
+
+        aside{
+
+            header{
+                background-color: $color_primary;
+                text-align: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                h1{
+                    color: $color_text_dark_mode;
+                    padding-top: .5rem;
+                }
+            }
+
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    padding-top: 1rem;
+
+                    li{
+                        list-style: none;
+                        display: block;
+                        padding-top: .75rem;
+                        padding-bottom: .75rem;
+                        padding-left: 1.25rem;
+                        margin-top: .0625rem;
+                        margin-bottom: .0625rem;
+
+                        &:hover{
+                            background-color: $color_secondary;
+                        }
+
+                        a{
+                            text-decoration: none;
+                            color: $color_link;
+                            @include transition(.3s, ease);
+                            font-size: 1.125rem;
+
+                            &:hover{
+                                color: $color_link_hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        position: relative;
+
+        main{
+            @extend %center_absolute;
+
+            h2{
+                display: flex;
+                justify-content: center;
+
+            }
+
+            form{
+                display: flex;
+                justify-content: center;
+                padding-top: 1rem;
+
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    input{
+                        width: fit-content;
+                    }
+
+                    button{
+                        padding: .5rem .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

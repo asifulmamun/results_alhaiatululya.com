@@ -24,7 +24,116 @@ button:hover, input[type=submit]:hover {
   background-color: #ddd;
 }
 
+.content_wrap .content main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100;
+}
+
+input[type=text], input[type=password], input[type=search], input[type=submit], input[type=button], button {
+  min-height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.content_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.content_wrap .sidebar_left {
+  width: 30%;
+}
+.content_wrap .content {
+  width: 60%;
+}
+
+.bg_secondary_color {
+  background-color: rgba(71, 135, 237, 0.2);
+}
+
 /* Main Css
 ----------- */
+.content_wrap .sidebar_left {
+  min-height: 100vh;
+  border-right: 0.0625rem solid #ccc;
+}
+.content_wrap .sidebar_left aside header {
+  background-color: #2a394f;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.content_wrap .sidebar_left aside header h1 {
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.content_wrap .sidebar_left aside nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 1rem;
+}
+.content_wrap .sidebar_left aside nav ul li {
+  list-style: none;
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  margin-top: 0.0625rem;
+  margin-bottom: 0.0625rem;
+}
+.content_wrap .sidebar_left aside nav ul li:hover {
+  background-color: rgba(71, 135, 237, 0.2);
+}
+.content_wrap .sidebar_left aside nav ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  font-size: 1.125rem;
+}
+.content_wrap .sidebar_left aside nav ul li a:hover {
+  color: #11116e;
+}
+.content_wrap .content {
+  position: relative;
+}
+.content_wrap .content main h2 {
+  display: flex;
+  justify-content: center;
+}
+.content_wrap .content main form {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.content_wrap .content main form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_wrap .content main form p input {
+  width: fit-content;
+}
+.content_wrap .content main form p button {
+  padding: 0.5rem 0.8rem;
+}
 
 /*# sourceMappingURL=style.css.map */
