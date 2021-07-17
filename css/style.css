@@ -1,5 +1,6 @@
 /* Global
 ----------* */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -42,12 +43,18 @@ html {
 
 body {
   width: 100;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 input[type=text], input[type=password], input[type=search], input[type=submit], input[type=button], button {
   min-height: 2.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+button, input[type=submit] {
+  background-color: #2a394f;
+  color: #fff;
 }
 
 .content_wrap {
@@ -61,7 +68,7 @@ input[type=text], input[type=password], input[type=search], input[type=submit], 
   width: 60%;
 }
 
-.bg_secondary_color {
+.nav_sidebar_li_bg {
   background-color: rgba(71, 135, 237, 0.2);
 }
 
@@ -118,6 +125,7 @@ input[type=text], input[type=password], input[type=search], input[type=submit], 
 .content_wrap .content main h2 {
   display: flex;
   justify-content: center;
+  background-color: #ddd;
 }
 .content_wrap .content main form {
   display: flex;
@@ -134,6 +142,7 @@ input[type=text], input[type=password], input[type=search], input[type=submit], 
 }
 .content_wrap .content main form p button {
   padding: 0.5rem 0.8rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

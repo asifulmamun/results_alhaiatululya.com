@@ -3,12 +3,12 @@ html{
     overflow-x: hidden;
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 // font-family: 'Hind Siliguri', sans-serif;
 
 body{
     width: 100;
-    // font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 input[type=text],input[type=password],input[type=search],input[type=submit],input[type=button],button{
@@ -20,6 +20,8 @@ input[type=text],input[type=password],input[type=search],input[type=submit],inpu
 // Button
 button,input[type=submit]{
     @extend %button_simple;
+    background-color: $color_primary;
+    color: $color_text_dark_mode;
 }
 
 // Like as Bootstrap
@@ -36,6 +38,6 @@ button,input[type=submit]{
     }
 }
 
-.bg_secondary_color{
-    background-color: $color_secondary;
+.nav_sidebar_li_bg{
+    background-color: $color_menu_heading_li_bg;
 }

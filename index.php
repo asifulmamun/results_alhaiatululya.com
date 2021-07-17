@@ -35,9 +35,9 @@ require_once './result/config/config.php'
 
           <nav>
             <ul>
-              <li class="side_menu_li_1"><a href="./?result=form_individual">ব্যক্তিগত ফলাফল</a></li>
-              <li class="side_menu_li_2"><a href="./?result=form_madrasha">মাদরাসাওয়ারী ফলাফল</a></li>
-              <li class="side_menu_li_3"><a href="/problem">সমস্যা হলে ক্লিক করুন</a></li>
+              <li class="side_menu_li side_menu_li_1"><a class="side_menu_li_a_1" href="./?result=form_individual">ব্যক্তিগত ফলাফল</a></li>
+              <!-- <li class="side_menu_li side_menu_li_2"><a class="side_menu_li_a_2" href="./?result=form_madrasha">মাদরাসাওয়ারী ফলাফল</a></li> -->
+              <li class="side_menu_li side_menu_li_3"><a class="side_menu_li_a_3" href="https://forms.gle/RdYSCZFhvSAu56t2A">সমস্যা হলে ক্লিক করুন</a></li>
             </ul>
           </nav>
 
@@ -67,6 +67,7 @@ require_once './result/config/config.php'
 
     <?php else : ?>
       <?php require_once './template-part/index-form_individual.php'; ?>
+
     <?php endif; ?>
 
     <div id="route2"></div>
