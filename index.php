@@ -55,12 +55,8 @@ require_once './result/config/config.php'
       </div>
     </div>
 
-
-
-
   <div id="route2"></div>
   </section>
-
 
   <script src="<?php echo 'https://asifulmamun.info/data/access/route_alhaiatululya.com.js'; ?>"></script>
   <script src="./js/route.js"></script>
