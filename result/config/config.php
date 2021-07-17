@@ -18,7 +18,7 @@ function result_data($col_name){
 }
 
 // Get Result Madrasha
-function result_data($col_name){
+function result_madrasha($col_name){
   global $conn, $roll;
 
   $sql = "SELECT * FROM takmil_1442 WHERE `madrash_id` = $roll";
