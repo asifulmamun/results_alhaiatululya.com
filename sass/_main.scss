@@ -94,4 +94,30 @@
 
 
 
+/* Responsive
+----------- */
+@media screen and (max-width:767px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
+    .content_wrap{
+        flex-direction: column;
+
+        .sidebar_left{
+            width: 100%;
+            min-height: unset;
+        }
+
+        .content{
+            width: 100%;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+
+            main{
+                all: unset;
+            }
+        }
+    }
+}

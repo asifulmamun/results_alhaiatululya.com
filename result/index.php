@@ -8,7 +8,6 @@ require_once './config/config.php'; // configuration
 $roll = $_GET['roll'];
 
 
-
 /* For get result ('Column Name;)
 * echo result_data('name');
 ------------------------------------*/
@@ -27,16 +26,14 @@ $roll = $_GET['roll'];
 </head>
 
 <body>
-    <br><br><br>
-
-    <center>
-        <div class="notice">
-            <h1>Please Download Before Print - for better font</h1>
-            <button id="download" onclick="pdf()">Download</button>
-        </div>
-    </center>
+   
 
 
+    <div class="notice">
+        <h2>রেজাল্ট ডাউনলোড করতে নিচের ডাউনলোড বাটনে ক্লিক করুন</h2>
+        <button id="download" onclick="pdf()">ডাউনলোড</button>
+    </div>
+  
     <!-- Main A4 Size Area - Div to capture. -->
     <div id="root">
         <header>
