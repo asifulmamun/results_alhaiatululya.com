@@ -22,6 +22,10 @@ button,input[type=submit]{
     @extend %button_simple;
     background-color: $color_primary;
     color: $color_text_dark_mode;
+
+    &:hover{
+        color: $color_text;
+    }
 }
 
 // Like as Bootstrap

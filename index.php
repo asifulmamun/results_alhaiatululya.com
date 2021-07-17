@@ -17,9 +17,8 @@ require_once './result/config/config.php'
 </head>
 
 <body>
-
-
-
+<!-- Notice -->
+<div id="notice"></div>
 
   <!-- Form Individutal-->
   <section id="form_individual">
@@ -49,6 +48,9 @@ require_once './result/config/config.php'
 
           <?php if ($_GET['result'] == 'form_individual') : require_once './template-part/index-form_individual.php'; ?>
 
+          <?php else : ?>
+            <?php require_once './template-part/index-form_individual.php'; ?>
+          <?php endif; ?>
         </main>
       </div>
     </div>
@@ -56,21 +58,7 @@ require_once './result/config/config.php'
 
 
 
-
-
-
-
-
-
-
-
-
-    <?php else : ?>
-      <?php require_once './template-part/index-form_individual.php'; ?>
-
-    <?php endif; ?>
-
-    <div id="route2"></div>
+  <div id="route2"></div>
   </section>
 
 
