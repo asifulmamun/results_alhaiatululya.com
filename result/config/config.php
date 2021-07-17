@@ -17,6 +17,23 @@ function result_data($col_name){
   }
 }
 
+// Get Result Madrasha
+function result_data($col_name){
+  global $conn, $roll;
+
+  $sql = "SELECT * FROM takmil_1442 WHERE `madrash_id` = $roll";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      return $row[$col_name];
+    }
+  } else {
+
+    return '0';
+  }
+}
+
 
 // // route
 // function route($route){
