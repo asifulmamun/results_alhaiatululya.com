@@ -17,23 +17,6 @@ function result_data($col_name){
   }
 }
 
-// Get Result By Madrasha
-function result_madrasha($col_name){
-  global $conn, $madrasah_code;
-
-  $sql = "SELECT * FROM takmil_1442 WHERE `madrasah_code` = $madrasah_code";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-      return $row[$col_name];
-    }
-  } else {
-
-    return 'N/A';
-  }
-}
-
 // Divison
 function division($division){
   if($division == 'Star'){
